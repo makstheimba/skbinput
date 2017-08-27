@@ -27,7 +27,15 @@ module.exports = {
         }],
       },
       {
-        test: /\.css$/,
+        test: /\.global\.css$/,
+        use: [{
+          loader: 'style-loader',
+        }, {
+          loader: 'css-loader',
+        }],
+      },
+      {
+        test: /^((?!\.global).)*\.css$/,
         exclude: [/node_modules/],
         loaders: [
           { loader: 'style-loader' },
