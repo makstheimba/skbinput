@@ -1,4 +1,5 @@
 const path = require('path');
+const devServer = require('./webpack.devserver.config.js');
 
 module.exports = {
   entry: {
@@ -9,11 +10,7 @@ module.exports = {
     path: __dirname,
     filename: 'dist/bundle.js',
   },
-  devServer: {
-    inline: true,
-    port: 8000,
-    contentBase: './src',
-  },
+  devServer,
   module: {
     rules: [
       {
