@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "dev": "webpack-dev-server --inline --hot",
     "start": "webpack -p"
   },
@@ -35,6 +37,7 @@
     "prop-types": "15.5.10",
     "rc-trigger": "1.11.3",
     "react": "15.4.0",
-    "react-dom": "15.4.0"
+    "react-dom": "15.4.0",
+    "react-styleguidist": "^6.0.20"
   }
 }
